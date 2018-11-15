@@ -1,0 +1,258 @@
+body{
+    font-family: "Roboto Slab", serif;
+    color: black;
+    overflow-x:hidden;
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.main-header{
+    background: url("../jpg/wood-text1.png") ;
+    width: 1920px;
+    margin-top: 5px;
+    z-index: 5;
+    box-shadow: 0px 50px 50px 0px rgba(0, 0, 0, .4);
+}
+
+
+.chapters{
+margin: 25px 0;
+    color: #fff;
+}
+
+.chapters__item{
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.order{
+    background: #d88982;
+    color: #000;
+    border: 0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 11px;
+    width: 120px;
+    height: 35px;
+    display: block;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+a:hover {
+     color: black;
+ }
+
+.order__icon{
+    background: url('../jpg/order.png');
+    display: block;
+    width: 50px;
+    z-index: 10;
+}
+
+.offer{
+    background-image: url("../jpg/FILE_393DF8-F9EA69-FE5607-E7B5AB-7AAD03-E893C0.png");
+    height: 700px;
+    width: 1920px;
+    box-shadow: 0px 50px 50px 0px rgba(0, 0, 0, .4);
+
+
+
+}
+h1{
+    font-size: 60pt;
+    font-weight: normal;
+    padding-top: 80px;
+    padding-bottom: 65px;
+    justify-content: center;
+    color: black;
+}
+.center-block{
+    align-content: center;
+}
+
+.alive{
+    margin-right: 75px;
+}
+
+.variants{
+    text-transform: uppercase;
+    font-size: 31px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 57px;
+
+}
+.zhiv{
+    margin-right: 130px;
+}
+.cta{
+
+    text-transform: uppercase;
+    background: #2d982c;
+    font-size: 36px;
+    font-weight: bold;
+    border: 0;
+    margin-bottom: 32px;
+    border-radius: 10px;
+    color: black;
+    width: 312px;
+    height: 85px;
+
+}
+
+.about{
+    background-image: url("../jpg/wood_about.png");
+    height: 1200px;
+    width: 1920px;
+    padding-top: 110px;
+    text-transform: uppercase;
+}
+
+h2{
+    color: black;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+p{
+    font-size: 16pt;
+
+    margin-top: 70px;
+    color: black;
+}
+
+
+.tarelka_rak{
+    left: 0;
+    position: absolute;
+
+}
+.feature_text{
+
+}
+
+.menu {
+    background-image: url("../jpg/menu.png");
+    width: 1920px;
+    font-size: 60pt;
+    padding-top: 80px;
+    box-shadow: 0px -25px 50px 0px rgba(0, 0, 0, .4);
+}
+
+.menu__choice{
+    margin-top: 20px;
+    margin-left: -18px;
+    font-size: 48px;
+    font-weight: normal;
+}
+.product__cards{
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+.product__item{
+    background: #ffffff;
+    width: 296px;
+    height: 510px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, .3);
+
+}
+.product__item__text{
+    margin-top: 20px;
+    padding-left: 10px;
+    font-size: 21pt;
+    line-height: 20px;
+}
+.product__item__btn{
+    width: 190px;
+    height: 50px;
+    font-size: 17pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 40px;
+
+}
+span{
+    font-weight: bold;
+}
+
+.buket__text{
+    font-size: 45px;
+    font-weight: normal;
+}
+
+.delievery{
+    background-image: url("../jpg/delievery.png");
+    width: 1920px;
+    padding-top: 150px;
+    font-size: 48pt;
+    padding-bottom:150px;
+}
+
+.heading__delievery{
+    margin-bottom: 75px;
+}
+
+.delievery__picture{
+    margin-bottom: 60px;
+}
+.text__delievery{
+    font-size: 30pt;
+    font-weight: bold;
+    position: relative;
+    top: -50px;
+    left: 20px;
+}
+.map{
+height: 750px;
+    width: 1920px;
+}
+.feedback{
+    background: #ffffff;
+    width: 457px;
+    height: 603px;
+    margin-bottom: 70px;
+    padding: 60px ;
+    margin-top: 70px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, .3);
+    float: right;
+}
+.feedback__form{
+    width: 350px;
+    height: 80px;
+    border: 1px black solid;
+    border-radius: 5px;
+    margin: 30px auto 30px;
+   color: #b4b0b0;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+
+}
+feedback__text{
+    margin-bottom: 50px;
+}
+.feedback__btn{
+    margin-top: 50px;
+    font-size: 20pt;
+}
+
+.footer{
+    background-image:  url("../jpg/delievery.png");
+    width: 1920px;
+    height: 90px;
+}
+.footer__items{
+    margin-top: 35px;
+}

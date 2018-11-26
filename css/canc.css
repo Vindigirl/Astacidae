@@ -1,18 +1,24 @@
 body{
     font-family: "Roboto Slab", serif;
     color: black;
-    overflow-x:hidden;
-}
-
-ul, li {
-    display: block;
+    /*overflow-x:hidden;*/
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+
 }
 
 .main-header{
     background: url("../jpg/wood-text1.png") ;
-    width: 1920px;
+    width: 100%;
+    max-width: 1920px;
     margin-top: 5px;
     z-index: 5;
     box-shadow: 0px 50px 50px 0px rgba(0, 0, 0, .4);
@@ -22,6 +28,9 @@ ul, li {
 .chapters{
 margin: 25px 0;
     color: #fff;
+    display: flex;
+    font-size: 18px;
+
 }
 
 .chapters__item{
@@ -29,7 +38,72 @@ margin: 25px 0;
     font-weight: 400;
     font-size: 18px;
     text-transform: uppercase;
+    padding: 5px;
+
 }
+
+.chapters__item:hover{
+    color: white;
+    background: black;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+input, label {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1048px){
+        .wrapper{
+            position: relative;
+        }
+        label {
+            display: block;
+            position: absolute;
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            z-index: 2;
+            line-height: 40px;
+        }
+
+        .chapters{
+            display: block;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            transform: translateY(100%);
+            max-height: 0;
+            font-size: 0px;
+            overflow: hidden;
+            transition: .5s all;
+        }
+
+        .chapters__item{
+            display: block;
+            width: 100%;
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+            border-top: 1px solid rgba(255,255,255,.3);
+            background-color: #2d982c;
+        }
+        .chapters__item:hover{
+            background-color: #d88982;
+        }
+
+        #check-menu:checked ~ .chapters{
+            max-height: 500px;
+            font-size: 30px;
+            z-index: 6;
+        }
+
+    }
 
 .order{
     background: #d88982;
@@ -57,9 +131,14 @@ a:hover {
 }
 
 .offer{
-    background-image: url("../jpg/FILE_393DF8-F9EA69-FE5607-E7B5AB-7AAD03-E893C0.png");
-    height: 700px;
-    width: 1920px;
+    background: url("../jpg/FILE_393DF8-F9EA69-FE5607-E7B5AB-7AAD03-E893C0.png") no-repeat center center fixed;
+    /*height: 700px;*/
+    width: 100%;
+    min-width: 100%;
+    /*max-width: 1920px;*/
+    height: 100%;
+    background-size: cover;
+z-index: 1;
     box-shadow: 0px 50px 50px 0px rgba(0, 0, 0, .4);
 
 
@@ -109,8 +188,10 @@ h1{
 
 .about{
     background-image: url("../jpg/wood_about.png");
-    height: 1200px;
-    width: 1920px;
+    /*height: 1200px;*/
+    /*width: 1920px;*/
+    width: 100%;
+    height: 100%;
     padding-top: 110px;
     text-transform: uppercase;
 }
@@ -132,6 +213,10 @@ p{
 .tarelka_rak{
     left: 0;
     position: absolute;
+    max-width:710px;
+    max-height: 500px;
+    width: 100%;
+    height: auto;
 
 }
 .feature_text{
@@ -140,7 +225,8 @@ p{
 
 .menu {
     background-image: url("../jpg/menu.png");
-    width: 1920px;
+    width: 100%;
+    max-width: 1920px;
     font-size: 60pt;
     padding-top: 80px;
     box-shadow: 0px -25px 50px 0px rgba(0, 0, 0, .4);
@@ -193,8 +279,10 @@ span{
 }
 
 .delievery{
-    background-image: url("../jpg/delievery.png");
-    width: 1920px;
+    background: url("../jpg/delievery.png") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    max-width: 1920px;
     padding-top: 150px;
     font-size: 48pt;
     padding-bottom:150px;
@@ -249,10 +337,18 @@ feedback__text{
 }
 
 .footer{
-    background-image:  url("../jpg/delievery.png");
-    width: 1920px;
+    background:  url("../jpg/delievery.png") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    max-width: 1920px;
     height: 90px;
 }
-.footer__items{
+.footer__items {
     margin-top: 35px;
+}
+
+@media screen and (max-width: 1048px) {
+    .chapters__item {
+        display: none;
+    }
 }

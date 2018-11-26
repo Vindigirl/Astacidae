@@ -1,0 +1,106 @@
+body{
+    font-family: "Roboto Slab", serif;
+    color: black;
+    /*overflow-x:hidden;*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+
+}
+
+.main-header{
+    background: url("../jpg/wood-text1.png") ;
+    width: 100%;
+    max-width: 1920px;
+    margin-top: 5px;
+    z-index: 5;
+    box-shadow: 0px 50px 50px 0px rgba(0, 0, 0, .4);
+}
+
+
+.chapters{
+    margin: 25px 0;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+
+}
+
+.chapters__item{
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 5px;
+
+}
+
+.chapters__item:hover{
+    color: white;
+    background: black;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+input, label {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1048px){
+    .wrapper{
+        position: relative;
+    }
+    label {
+        display: block;
+        position: absolute;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        z-index: 2;
+        line-height: 40px;
+    }
+
+    .chapters{
+        display: block;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
+        max-height: 0;
+        font-size: 0px;
+        overflow: hidden;
+        transition: .5s all;
+    }
+
+    .chapters__item{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        color: black;
+        text-decoration: none;
+        border-top: 1px solid rgba(255,255,255,.3);
+        background-color: #2d982c;
+    }
+    .chapters__item:hover{
+        background-color: #d88982;
+    }
+
+    #check-menu:checked ~ .chapters{
+        max-height: 500px;
+        font-size: 30px;
+        z-index: 6;
+    }
+
+}

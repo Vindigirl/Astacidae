@@ -24,7 +24,7 @@
 
 
 
-                    <ul class="chapters">
+                    <ul class="chapters justify-content space-between">
                                 <li>
                                     <a class="chapters__item" href="#">главная</a>
                                 </li>
@@ -51,30 +51,24 @@
             </div>
     </div>
     <div class="offer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="main-title text-center">
-                        вкусные волжские раки
-                    </h1>
+        <h1 class="text-center">
+            вкусные волжские раки
+        </h1>
+        <div class="variants__container">
+            <div class="variants">
+                <div class="variants__item">
+                    <img class="alive" src="jpg/alive.png"/>
+                    <h3>живые</h3>
+                </div>
+                <div class="variants__item">
+                    <img class="dead" src="jpg/var.png"/>
+                    <h3>вареные</h3>
                 </div>
             </div>
-            <div class="row">
-            <div class="mx-auto d-block">
-                <img class="alive" src="jpg/alive.png" width="200" height="200"/>
-                <img src="jpg/var.png"  width="200" height="200"/>
-            </div>
         </div>
-        <div class="row">
-            <div class="variants mx-auto d-block">
-                <span class="zhiv">живые</span>
-                <span>вареные</span>
-            </div>
-        </div>
-            <button type="button" class="btn btn-primary cta mx-auto d-block">
-                заказать!
-            </button>
-        </div>
+        <button type="button" class="btn btn-primary cta mx-auto d-block">
+            заказать!
+        </button>
     </div>
 </header>
 
@@ -88,16 +82,16 @@
         </p>
             </div>
             <div class="col-lg-4">
-                <img src="jpg/var_rak.jpg" width="730" height="500"/>
+                <img class="pot_rak" src="jpg/var_rak.jpg" width="730" height="500"/>
             </div>
         </div>
     </div>
     <div class="fullwidth-container">
     <div class="row">
-            <div class="col-sm-5 feature-img">
-                <img class="tarelka_rak"src="jpg/tarelka_rak.jpg" />
+            <div class="col-lg-5 feature-img">
+                <img class="tarelka_rak" src="jpg/tarelka_rak.jpg" width="2048" height="1365"/>
             </div>
-            <div class="col-sm-5 feature_text">
+            <div class="col-lg-5 feature_text">
                 <p>
                     ste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
                 </p>
@@ -114,27 +108,18 @@
         <div class="row">
             <div class="col-lg-10">
             <ul class="menu__choice d-flex justify-content-between">
-                <li><h3>Живые раки</h3> </li>
-                <li><h3>Вареные раки</h3> </li>
-                <li><h3>Напитки</h3> </li>
+                <li class="menu__choice_variant"><h3>Живые раки</h3> </li>
+                <li class="menu__choice_variant"><h3>Вареные раки</h3> </li>
+                <li class="menu__choice_variant"><h3>Напитки</h3> </li>
             </ul>
             </div>
         </div>
     </div>
 
 
-    <div class="container">
-        <div class="row">
-            <div class="product__cards">
-                <div class="product__item">
-                    <img src="jpg/product_picture.png"/>
-                    <h3 class="product__item__text">
-                        Раки 1 категории<br><br><span>900 р.</span> за кг
-                    </h3>
-                    <button type="button" class="product__item__btn btn-primary cta mx-auto d-block">
-                        в корзину!
-                    </button>
-                </div>
+    <div class="products__container">
+            <div class="products">
+
 
                     <div class="product__item">
                         <img src="jpg/product_picture.png"/>
@@ -155,9 +140,6 @@
                             в корзину!
                         </button>
                     </div>
-
-
-
 
                     <div class="product__item">
                         <img src="jpg/product_picture.png"/>
@@ -190,19 +172,13 @@
                             в корзину!
                         </button>
                     </div>
-
             </div>
     </div>
+    <h3 class="buket__text">Удиви своего мужчину - подари ему букет раков!</h3>
 
+    <div class="products__container">
 
-
-
-
-        <div class="row">
-            <p class="buket__text">Удиви своего мужчину - подари ему букет раков!<p>
-            </div>
-        <div class="row">
-            <div class="product__cards">
+            <div class="products">
                     <div class="product__item">
                         <img src="jpg/1.png"/>
                         <h3 class="product__item__text">
@@ -233,11 +209,8 @@
                             в корзину!
                         </button>
                     </div>
-
-
+                </div>
             </div>
-        </div>
-    </div>
 </section>
 
 <section class="delievery">
@@ -268,7 +241,24 @@
     </div>
 </section>
 
-<section class="map">
+<section id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16329.220077596148!2d30.33075580248335!3d59.8787560650081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963001cbeb30b7%3A0x91dd3877df4ac365!2z0KLQoNCaIMKr0J_QuNGC0LXRgCDQoNCw0LTRg9Cz0LDCuw!5e0!3m2!1sen!2sru!4v1543493936603"
+            width="1920" height="750" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <!--<script>-->
+        <!--// Inition initMap() {-->
+            <!--// The location of Uluru-->
+            <!--var uluru = {lat: 60.2147211, lng: 37.5274588};-->
+            <!--// The map, centered at Uluru-->
+            <!--var map = new google.maps.Map(-->
+                <!--documialize and add the map-->
+        <!--functent.getElementById('map'), {zoom: 5, center: uluru});-->
+            <!--// The marker, positioned at Uluru-->
+            <!--var marker = new google.maps.Marker({position: uluru, map: map});-->
+        <!--}-->
+    <!--</script>-->
+    <!--<script async defer-->
+            <!--src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCM2oDCyoyT4OBX7dSqZj33Z8O_v8oKhtA&callback=initMap">-->
+    <!--</script>-->
     <div class="container">
         <div class="feedback">
             <h3 class="feedback__text text-center">

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light-webfont.woff') format('woff');
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -5,7 +10,7 @@
 }
 
 body{
-    font-family: "Roboto Slab", serif;
+    font-family: "Roboto", serif;
     color: black;
     overflow-x:hidden;
     box-sizing: border-box;
